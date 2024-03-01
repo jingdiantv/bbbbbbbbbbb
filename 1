@@ -1,0 +1,337 @@
+#  Hi,We are free ,please avoid fraud.
+#  Generated at 2023-12-31 00:00 by 5️⃣i計畫通行
+#  Clash Meta Core
+ipv6: true
+allow-lan: true
+mixed-port: 7890
+unified-delay: false
+tcp-concurrent: true
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+geo-update-interval: 24
+geodata-mode: true
+
+geox-url:
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack:
+    - "any:53"
+  auto-route: true
+  auto-detect-interface: true
+
+dns:
+  enable: true
+  listen: :1053
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 28.0.0.1/8
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "+.local"
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+  nameserver-policy:
+    "geosite:private":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    "geosite:geolocation-!cn":
+      - "https://dns.cloudflare.com/dns-query#dns"
+      - "https://dns.google/dns-query#dns"
+
+proxy-groups:
+  - name: 🌐 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+      - DIRECT
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 🔮 负载均衡-散列
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    proxies:
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 🔮 负载均衡-轮询
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: round-robin
+    proxies:
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+- name: 🌏 国内媒体
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+      - 🎯 全球直连
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+      - 🎯 全球直连
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+      - 🎯 全球直连
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🌐 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡-轮询
+      - 🔮 负载均衡-散列
+    use:
+      - 🛩️ 5️⃣iClub·計畫通行
+
+proxy-providers:
+  🛩️ 5️⃣iClub·計畫通行:
+    type: http
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ClodQiu/SCAN/main/sub/merged_proxies_new.yaml"
+    path: 5️⃣i計畫通行/SCAN.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
+    path: ./5️⃣i計畫通行/LocalAreaNetwork.yaml
+    interval: 86400
+  UnBan:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml"
+    path: ./5️⃣i計畫通行/UnBan.yaml
+    interval: 86400
+  GoogleFCM:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/GoogleFCM.yaml"
+    path: ./5️⃣i計畫通行/GoogleFCM.yaml
+    interval: 86400
+  GoogleCN:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/GoogleCN.yaml"
+    path: ./5️⃣i計畫通行/GoogleCN.yaml
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Microsoft.yaml"
+    path: ./5️⃣i計畫通行/Microsoft.yaml
+    interval: 86400
+  Apple:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Apple.yaml"
+    path: ./5️⃣i計畫通行/Apple.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Telegram.yaml"
+    path: ./5️⃣i計畫通行/Telegram.yaml
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/YouTube.yaml"
+    path: ./5️⃣i計畫通行/YouTube.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaMedia.yaml"
+    path: ./5️⃣i計畫通行/ChinaMedia.yaml
+    interval: 86400
+  ProxyMedia:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml"
+    path: ./5️⃣i計畫通行/ProxyMedia.yaml
+    interval: 86400
+  ProxyGFWlist:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
+    path: ./5️⃣i計畫通行/ProxyGFWlist.yaml
+    interval: 86400
+  ChinaIp:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml"
+    path: ./5️⃣i計畫通行/ChinaIp.yaml
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml"
+    path: ./5️⃣i計畫通行/ChinaDomain.yaml
+    interval: 86400
+  ChinaCompanyIp:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
+    path: ./5️⃣i計畫通行/ChinaCompanyIp.yaml
+    interval: 86400
+  Download:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Download.yaml"
+    path: ./5️⃣i計畫通行/Download.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - DOMAIN,clash.razord.top,🎯 全球直连
+  - DOMAIN,yacd.haishan.me,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
+  - RULE-SET,GoogleFCM,🌐 节点选择
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,YouTube,📹 油管视频
+  - RULE-SET,ChinaMedia,🌏 国内媒体
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,ProxyGFWlist,🌐 节点选择
+  - RULE-SET,ChinaIp,🎯 全球直连
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,Download,🎯 全球直连
+  - GEOIP,LAN,🎯 全球直连,no-resolve
+  - GEOIP,CN,🎯 全球直连,no-resolve
+  - MATCH,🌐 节点选择
