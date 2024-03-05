@@ -1,0 +1,527 @@
+ipv6: true
+allow-lan: true
+mixed-port: 7890
+unified-delay: false
+tcp-concurrent: true
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip
+geo-update-interval: 24
+geodata-mode: true
+geox-url:
+  geoip: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+  geosite: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb
+find-process-mode: strict
+global-client-fingerprint: chrome
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack:
+    - any:53
+  auto-route: true
+  auto-detect-interface: true
+dns:
+  enable: true
+  listen: :1053
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 28.0.0.1/8
+  fake-ip-filter:
+    - "*"
+    - +.lan
+    - +.local
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+  nameserver-policy:
+    geosite:private:
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    geosite:geolocation-!cn:
+      - https://dns.cloudflare.com/dns-query#dns
+      - https://dns.google/dns-query#dns
+proxies:
+  - {name: 距离下次重置剩余：1 天, server: cf.kfcvme50.life, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hytron.kfcvme50.life}}, udp: true}
+  - {name: 群组 t.me/nekoport, server: cf.kfcvme50.life, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hytron.kfcvme50.life}}, udp: true}
+  - {name: 港鸡蛋仔 01, server: 3ab83739-e995-4f97-9629-41faac2255c9.xn--9kq12xdq7a.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 港鸡蛋仔 01-IP, server: 116.92.208.15, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 港鸡蛋仔 01-CF, server: cf.kfcvme50.life, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkbn.kfcvme50.life}}, udp: true}
+  - {name: 港鸡蛋仔 01-移动优化, server: cm-cdn.kfcvme50.life, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkbn.kfcvme50.life}}, udp: true}
+  - {name: 港鱼蛋粉 02-CF, server: cf.kfcvme50.life, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hytron.kfcvme50.life}}, udp: true}
+  - {name: 港鱼蛋粉 02-移动优化, server: cm-cdn.kfcvme50.life, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hytron.kfcvme50.life}}, udp: true}
+  - {name: 狮城叻沙 01, server: sg5.e4ac22b8-9131-4e27-9207-1f82a048b7ce.genshinimpact.cyou, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 狮城叻沙 01-IP, server: 13.250.57.57, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 狮城沙爹 02, server: sg6.215b79f1-b965-4c22-af1b-86e515c1d375.genshinimpact.cyou, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 狮城沙爹 02-IP, server: 52.221.209.202, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 狮城辣蟹 03, server: sg7.5da8e024-2c9f-436c-8ae3-db9f3af7e59d.genshinimpact.cyou, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 狮城辣蟹 03-IP, server: 13.212.210.15, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本寿司 01, server: jp1.857e6097-110f-4bac-af3f-de538c9d845f.genshinimpact.cyou, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本寿司 01-IP, server: 54.150.241.40, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本乌冬 02, server: jp2.081d8e06-2c03-4b9a-8aa1-edb6f05b9b4f.genshinimpact.cyou, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本乌冬 02-IP, server: 35.72.6.185, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本拉面 03, server: jp3.384c7e10-0c51-476e-a4cf-a3550872970f.genshinimpact.cyou, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本拉面 03-IP, server: 52.193.194.155, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 美国龙虾 03-CF, server: cf.kfcvme50.life, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.kfcvme50.life}}, udp: true}
+  - {name: 美国龙虾 03-移动优化, server: cm-cdn.kfcvme50.life, port: 80, client-fingerprint: chrome, type: vmess, uuid: 40c16464-58a6-49aa-abe5-2c79ce02fa31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.kfcvme50.life}}, udp: true}
+proxy-groups:
+  - name: 🌐 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - DIRECT
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 🔮 负载均衡
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🎯 全球直连
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🎯 全球直连
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🎯 全球直连
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🌐 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🎯 全球直连
+      - 距离下次重置剩余：1 天
+      - 群组 t.me/nekoport
+      - 港鸡蛋仔 01
+      - 港鸡蛋仔 01-IP
+      - 港鸡蛋仔 01-CF
+      - 港鸡蛋仔 01-移动优化
+      - 港鱼蛋粉 02-CF
+      - 港鱼蛋粉 02-移动优化
+      - 狮城叻沙 01
+      - 狮城叻沙 01-IP
+      - 狮城沙爹 02
+      - 狮城沙爹 02-IP
+      - 狮城辣蟹 03
+      - 狮城辣蟹 03-IP
+      - 日本寿司 01
+      - 日本寿司 01-IP
+      - 日本乌冬 02
+      - 日本乌冬 02-IP
+      - 日本拉面 03
+      - 日本拉面 03-IP
+      - 美国龙虾 03-CF
+      - 美国龙虾 03-移动优化
+
+rules:
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - DOMAIN,clash.razord.top,🎯 全球直连
+  - DOMAIN,yacd.haishan.me,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
+  - RULE-SET,SteamCN,🛑 全球拦截
+  - RULE-SET,ChinaMedia,🌏 国内媒体
+  - RULE-SET,Apple,🎯 全球直连
+  - RULE-SET,GoogleFCM,📢 谷歌FCM
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,ProxyGFWlist,🌐 节点选择
+  - RULE-SET,Microsoft,🎯 全球直连
+  - RULE-SET,lancidr,🎯 全球直连
+  - RULE-SET,cncidr,🎯 全球直连
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,YouTube,📹 油管视频
+  - GEOSITE,cn,🎯 全球直连
+  - GEOSITE,geolocation-!cn,🌐 节点选择
+  - GEOIP,LAN,🎯 全球直连,no-resolve
+  - GEOIP,CN,🎯 全球直连,no-resolve
+  - MATCH,🐟 漏网之鱼
+
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: text}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: text}
+rule-providers:
+  LocalAreaNetwork:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
+  UnBan:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list"
+  GoogleFCM:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
+  GoogleCN:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list"
+  SteamCN:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list"
+  Microsoft:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
+  Apple:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
+  Telegram:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
+  YouTube:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+  LocalAreaNetwork:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
+  ChinaMedia:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list"
+  ProxyMedia:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+  ProxyGFWlist:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+  ChinaIp:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list"
+  ChinaIpV6:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIpV6.list"
+  ChinaDomain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+  Download:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list"
