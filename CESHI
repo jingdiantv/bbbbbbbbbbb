@@ -1,11 +1,10 @@
-#EXTINF:-1 group-title="🦄频道",凤凰资讯
-http://php.17186.eu.org/phtv/fhzx.m3u8
-
-#EXTINF:-1 group-title="🦄频道",XGWS
-http://110.72.79.92:808/hls/333/index.m3u8
-
-#EXTINF:-1 group-title="🦄频道",凤凰中文
-http://171.214.202.220:4000/udp/239.93.0.162:2192
-
-h#EXTINF:-1 group-title="🦄频道",凤凰1
-http://210.210.155.37/uq2663/h/h157/index2.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="开封新闻综合" tvg-logo="https://huangsuming.codeberg.page/logo/tv/local/ha/" group-title="河南",开封新闻综合
+http://live.dxhmt.cn:9081/tv/10200-2.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="开封文化旅游" tvg-logo="https://huangsuming.codeberg.page/logo/tv/local/ha/" group-title="河南",开封文化旅游
+http://live.dxhmt.cn:9081/tv/10200-3.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="洛阳新闻综合" tvg-logo="https://huangsuming.codeberg.page/logo/tv/local/ha/" group-title="河南",洛阳新闻综合
+http://wshls.live.migucloud.com/live/C788MHFD_C0/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="洛阳科教" tvg-logo="https://huangsuming.codeberg.page/logo/tv/local/ha/" group-title="河南",洛阳科教
+http://wshls.live.migucloud.com/live/CXGQPXRK_C0/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="洛阳文旅" tvg-logo="https://huangsuming.codeberg.page/logo/tv/local/ha/" group-title="河南",洛阳文旅
+http://wshls.live.migucloud.com/live/FJ7Q9PIT_C0/playlist.m3u8
