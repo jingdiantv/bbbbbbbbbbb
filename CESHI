@@ -1,3 +1,4 @@
+#EXTM3U
 #EXTINF:-1 tvg-id="" tvg-name="开封新闻综合" tvg-logo="https://huangsuming.codeberg.page/logo/tv/local/ha/" group-title="河南",开封新闻综合
 http://live.dxhmt.cn:9081/tv/10200-2.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="开封文化旅游" tvg-logo="https://huangsuming.codeberg.page/logo/tv/local/ha/" group-title="河南",开封文化旅游
@@ -9,7 +10,6 @@ http://wshls.live.migucloud.com/live/CXGQPXRK_C0/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="洛阳文旅" tvg-logo="https://huangsuming.codeberg.page/logo/tv/local/ha/" group-title="河南",洛阳文旅
 http://wshls.live.migucloud.com/live/FJ7Q9PIT_C0/playlist.m3u8
 
-#EXTM3U
 #EXTINF:-1,翡翠台（廣電 IPv6）
 http://iptv.hiper25.com:42487/TVB/video.m3u8?token=GuangDian_Token
 #EXTINF:-1,明珠台（廣電 IPv6）
@@ -42,4 +42,23 @@ http://iptv.hiper25.com:42487/guangzhouxinwen/video.m3u8?token=GuangDian_Token
 http://iptv.hiper25.com:42487/jingbaotiyu/video.m3u8?token=GuangDian_Token
 #EXTINF:-1,新視覺（廣電 IPv6）
 http://iptv.hiper25.com:42487/xinshijue/video.m3u8?token=GuangDian_Token
+
+#EXTINF:-1,广东珠江超清
+http://119.123.116.66:4022/udp/239.77.0.114:5146
+#EXTINF:-1,广东新闻高清
+http://119.123.116.66:4022/udp/239.77.0.173:5146
+#EXTINF:-1,广东民生高清
+http://119.123.116.66:4022/udp/239.77.0.225:5146
+#EXTINF:-1,广东体育超清
+http://119.123.116.66:4022/udp/239.77.0.168:5146
+#EXTINF:-1,经济科教超清
+http://119.123.116.66:4022/udp/239.77.0.167:5146
+#EXTINF:-1,大湾区卫视高清
+http://119.123.116.66:4022/udp/239.77.0.215:5146
+#EXTINF:-1,广东影视高清
+http://119.123.116.66:4022/udp/239.77.0.217:5146
+#EXTINF:-1,广东少儿高清
+http://119.123.116.66:4022/udp/239.77.0.250:5146
+#EXTINF:-1,嘉佳卡通高清
+http://119.123.116.66:4022/udp/239.77.0.179:5146
 
