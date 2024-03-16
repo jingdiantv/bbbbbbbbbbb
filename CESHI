@@ -1,0 +1,40 @@
+#EXTINF:-1 group-title="玉溪移动" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijingjishi.png",北京冬奥纪实HD
+http://39.130.202.81:6610/gitv_live/G_BEIJINGJS-HD/G_BEIJINGJS-HD.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png",北京卫视 FHD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s1/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV文艺.png",北京文艺 HD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s2/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV科教.png",北京科教 HD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s3/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV影视.png",北京影视 HD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s4/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV财经.png",北京财经 FHD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s5/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijingjishi.png",冬奥纪实 FHD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s6/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV生活.png",北京生活 FHD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s7/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV青年.png",北京青年 FHD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s8/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/sheng/BTV新闻.png",北京新闻 FHD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s9/index.m3u8
+#EXTINF:-1 group-title="省市地方" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/kaku.png",卡酷少儿 FHD
+http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s10/index.m3u8
+#EXTINF:-1 group-title="体育频道" tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijingjishi.png",北京冬奥纪实
+http://223.110.241.133:6610/cntv/live1/HD-8000k-1080P-beijingjishi/HD-8000k-1080P-beijingjishi
+#EXTINF:-1 group-title="影视动画" tvg-logo="https://www.hualigs.cn/image/6153d99a320ac.jpg",北京IPTV4K超清
+http://39.134.135.80/otttv.bj.chinamobile.com/TVOD/88888888/224/3221226550/1.m3u8
+#EXTINF:-1 group-title="影视动画" tvg-logo="https://www.hualigs.cn/image/6153d99a320ac.jpg",北京IPTV4K超清
+http://39.134.134.85/otttv.bj.chinamobile.com/TVOD/88888888/224/3221226550/1.m3u8
+#EXTINF:-1 group-title="影视动画" tvg-logo="https://www.hualigs.cn/image/6153d999eb3a6.jpg",北京IPTV淘电影
+http://39.134.135.80/otttv.bj.chinamobile.com/TVOD/88888888/224/3221226552/1.m3u8
+#EXTINF:-1 group-title="影视动画" tvg-logo="https://www.hualigs.cn/image/6153d999eb3a6.jpg",北京IPTV淘电影
+http://39.134.134.85/otttv.bj.chinamobile.com/TVOD/88888888/224/3221226552/1.m3u8
+#EXTINF:-1 group-title="影视动画" tvg-logo="https://www.hualigs.cn/image/6153d99a454ef.jpg",北京IPTV淘剧场
+http://39.134.135.80/otttv.bj.chinamobile.com/TVOD/88888888/224/3221226553/1.m3u8
+#EXTINF:-1 group-title="影视动画" tvg-logo="https://www.hualigs.cn/image/6153d99a421ec.jpg",北京IPTV淘娱乐
+http://39.135.238.69/otttv.bj.chinamobile.com/TVOD/88888888/224/3221226551/1.m3u8
+#EXTINF:-1 ,北京IPTV淘剧场
+http://39.134.135.80/otttv.bj.chinamobile.com/TVOD/88888888/224/3221226553/1.m3u8
+#EXTINF:-1 ,北京IPTV淘电影
+http://39.134.135.80/otttv.bj.chinamobile.com/TVOD/88888888/224/3221226552/1.m3u8
