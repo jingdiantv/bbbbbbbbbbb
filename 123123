@@ -1,27 +1,42 @@
-#EXTM3U
-#EXTINF:-1,tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://epg.112114.xyz/logo/江苏卫视.png" group-title="卫视",江苏卫视
-http://49.83.84.2:7000/udp/239.49.1.16:6000
-#EXTINF:-1,tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://epg.112114.xyz/logo/江苏城市.png" group-title="江苏",江苏城市
-http://49.83.84.2:7000/udp/239.49.1.17:6000
-#EXTINF:-1,tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://epg.112114.xyz/logo/江苏综艺.png" group-title="江苏",江苏综艺
-http://49.83.84.2:7000/udp/239.49.1.18:6000
-#EXTINF:-1,tvg-id="江苏体育" tvg-name="江苏体育" tvg-logo="https://epg.112114.xyz/logo/江苏体育.png" group-title="江苏",江苏体育
-http://49.83.84.2:7000/udp/239.49.1.19:6000
-#EXTINF:-1,tvg-id="江苏影视" tvg-name="江苏影视" tvg-logo="https://epg.112114.xyz/logo/江苏影视.png" group-title="江苏",江苏影视
-http://49.83.84.2:7000/udp/239.49.1.20:6000
-#EXTINF:-1,tvg-id="江苏卡通" tvg-name="江苏卡通" tvg-logo="https://epg.112114.xyz/logo/江苏卡通.png" group-title="江苏",江苏卡通
-http://49.83.84.2:7000/udp/239.49.1.21:6000
-#EXTINF:-1,tvg-id="江苏公共新闻" tvg-name="江苏公共新闻" tvg-logo="https://epg.112114.xyz/logo/江苏公共新闻.png" group-title="江苏",江苏公共
-http://49.83.84.2:7000/udp/239.49.1.22:6000
-#EXTINF:-1,tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="https://epg.112114.xyz/logo/江苏国际.png" group-title="江苏",江苏国际
-http://49.83.84.2:7000/udp/239.49.1.23:6000
-#EXTINF:-1,tvg-id="江苏购物" tvg-name="江苏购物" tvg-logo="https://epg.112114.xyz/logo/江苏购物.png" group-title="江苏",江苏购物
-http://49.83.84.2:7000/udp/239.49.1.24:6000
-#EXTINF:-1,tvg-id="江苏教育电视台" tvg-name="江苏教育电视台" tvg-logo="https://epg.112114.xyz/logo/江苏教育电视台.png" group-title="江苏",江苏教育
-http://49.83.84.2:7000/udp/239.49.1.25:6000
-#EXTINF:-1,tvg-id="江苏靓妆" tvg-name="江苏靓妆" tvg-logo="https://epg.112114.xyz/logo/江苏靓妆.png" group-title="江苏",江苏靓妆
-http://49.83.84.2:7000/udp/239.49.1.26:6000
-#EXTINF:-1,tvg-id="南京科教" tvg-name="南京科教" tvg-logo="https://epg.112114.xyz/logo/南京科教.png" group-title="其他",南京科教
-http://49.83.84.2:7000/udp/239.49.1.27:6000
-#EXTINF:-1,tvg-id="南京生活" tvg-name="南京生活" tvg-logo="https://epg.112114.xyz/logo/南京生活.png" group-title="其他",南京生活
-http://49.83.84.2:7000/udp/239.49.1.28:6000
+国学频道 4M1080,http://[2409:8087:4400:20:1:a0f:12:3b]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226629/index.m3u8
+国学频道 4M1080,http://[2409:8087:4402:20:1:1216:401:17]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226493/index.m3u8
+河南乡村 4M1080,http://[2409:8087:4402:20:1:1216:401:37]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226443/index.m3u8
+河南乡村 4M1080,http://[2409:8087:4402:20:1:1216:401:2e]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226576/index.m3u8
+河南公共 4M1080,http://[2409:8087:4402:20:1:1216:401:2a]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226566/index.m3u8
+河南公共 4M1080,http://[2409:8087:4400:20:1:70f:1011:16]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226441/index.m3u8
+河南功夫 4M1080,http://[2409:8087:4402:20:1:1216:401:10]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226440/index.m3u8
+河南功夫 4M1080,http://[2409:8087:4402:20:1:1216:401:40]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226692/index.m3u8
+河南国际 4M1080,http://[2409:8087:4400:20:1:70f:1011:16]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226434/index.m3u8
+河南国际 4M1080,http://[2409:8087:4400:20:1:a0f:12:3c]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226588/index.m3u8
+河南戏曲 4M1080,http://[2409:8087:4400:20:1:a0f:12:e]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226438/index.m3u8
+河南戏曲 4M1080,http://[2409:8087:4402:20:1:1216:401:39]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226561/index.m3u8
+河南文博 4M1080,http://[2409:8087:4402:20:1:1216:401:37]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226447/index.m3u8
+河南文博 4M1080,http://[2409:8087:4400:20:1:a0f:12:35]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226638/index.m3u8
+河南新闻 4M1080,http://[2409:8087:4402:20:1:1216:401:3b]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226544/index.m3u8
+河南新闻 4M1080,http://[2409:8087:4400:20:1:a0f:12:e]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226439/index.m3u8
+河南欢腾购物 4M1080,http://[2409:8087:4402:20:1:1216:401:2a]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226535/index.m3u8
+河南欢腾购物 4M1080,http://[2409:8087:4400:20:1:a0f:12:d]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226432/index.m3u8
+河南欢腾购物 4M1080黑边,http://[2409:8087:4402:20:1:1216:401:44]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226641/index.m3u8
+河南欢腾购物 4M1080黑边,http://[2409:8087:4402:20:1:1216:401:16]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226495/index.m3u8
+河南民生 4M1080,http://[2409:8087:4402:20:1:1216:401:14]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226433/index.m3u8
+河南民生 4M1080,http://[2409:8087:4402:20:1:1216:401:45]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226685/index.m3u8
+河南法治 4M1080,http://[2409:8087:4400:20:1:a0f:12:e]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226435/index.m3u8
+河南法治 4M1080,http://[2409:8087:4400:20:1:a0f:12:35]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226724/index.m3u8
+河南电视剧 4M1080,http://[2409:8087:4400:20:1:a0f:12:e]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226437/index.m3u8
+河南电视剧 4M1080,http://[2409:8087:4402:20:1:1216:401:39]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226521/index.m3u8
+河南睛彩中原 4M1080,http://[2409:8087:4402:20:1:1216:401:14]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226445/index.m3u8
+河南睛彩中原 4M1080,http://[2409:8087:4400:20:1:a0f:12:23]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226589/index.m3u8
+河南移动戏曲 4M1080,http://[2409:8087:4402:20:1:1216:401:14]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226436/index.m3u8
+河南移动戏曲 4M1080,http://[2409:8087:4400:20:1:a0f:12:33]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226628/index.m3u8
+河南移动电视 4M1080,http://[2409:8087:4402:20:1:1216:401:2d]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226871/index.m3u8
+河南都市 4M1080,http://[2409:8087:4400:20:1:a0f:12:e]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226430/index.m3u8
+河南都市 4M1080,http://[2409:8087:4402:20:1:1216:401:3e]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226649/index.m3u8
+健康中原 4M1080,http://[2409:8087:4402:20:1:1216:401:2f]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221227110/index.m3u8
+郑州商都 4M1080,http://[2409:8087:4402:20:1:1216:401:17]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226402/index.m3u8
+郑州商都 4M1080,http://[2409:8087:4402:20:1:1216:401:30]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226650/index.m3u8
+郑州文体旅游 4M1080,http://[2409:8087:4402:20:1:1216:401:17]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226407/index.m3u8
+郑州文体旅游 4M1080,http://[2409:8087:4402:20:1:1216:401:44]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226627/index.m3u8
+郑州新闻综合 4M1080,http://[2409:8087:4402:20:1:1216:401:17]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226404/index.m3u8
+郑州新闻综合 4M1080,http://[2409:8087:4400:20:1:a0f:12:2a]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226618/index.m3u8
+郑州都市生活 2M1080,http://[2409:8087:4402:20:1:1216:401:13]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226400/index.m3u8
+郑州都市生活 2M1080,http://[2409:8087:4402:20:1:1216:401:39]/iptv.cdn.ha.chinamobile.com/PLTV/88888888/224/3221226708/index.m3u8
