@@ -1,27 +1,27 @@
 #EXTM3U
 #EXTINF:-1,tvg-id="江苏卫视" tvg-name="江苏卫视" tvg-logo="https://epg.112114.xyz/logo/江苏卫视.png" group-title="卫视",江苏卫视
-http://49.83.84.2:7000/rtp/239.49.1.16:6000
+http://49.83.84.2:7000/udp/239.49.1.16:6000
 #EXTINF:-1,tvg-id="江苏城市" tvg-name="江苏城市" tvg-logo="https://epg.112114.xyz/logo/江苏城市.png" group-title="江苏",江苏城市
-http://49.83.84.2:7000/rtp/239.49.1.17:6000
+http://49.83.84.2:7000/udp/239.49.1.17:6000
 #EXTINF:-1,tvg-id="江苏综艺" tvg-name="江苏综艺" tvg-logo="https://epg.112114.xyz/logo/江苏综艺.png" group-title="江苏",江苏综艺
-http://49.83.84.2:7000/rtp/239.49.1.18:6000
+http://49.83.84.2:7000/udp/239.49.1.18:6000
 #EXTINF:-1,tvg-id="江苏体育" tvg-name="江苏体育" tvg-logo="https://epg.112114.xyz/logo/江苏体育.png" group-title="江苏",江苏体育
-http://49.83.84.2:7000/rtp/239.49.1.19:6000
+http://49.83.84.2:7000/udp/239.49.1.19:6000
 #EXTINF:-1,tvg-id="江苏影视" tvg-name="江苏影视" tvg-logo="https://epg.112114.xyz/logo/江苏影视.png" group-title="江苏",江苏影视
-http://49.83.84.2:7000/rtp/239.49.1.20:6000
+http://49.83.84.2:7000/udp/239.49.1.20:6000
 #EXTINF:-1,tvg-id="江苏卡通" tvg-name="江苏卡通" tvg-logo="https://epg.112114.xyz/logo/江苏卡通.png" group-title="江苏",江苏卡通
-http://49.83.84.2:7000/rtp/239.49.1.21:6000
+http://49.83.84.2:7000/udp/239.49.1.21:6000
 #EXTINF:-1,tvg-id="江苏公共新闻" tvg-name="江苏公共新闻" tvg-logo="https://epg.112114.xyz/logo/江苏公共新闻.png" group-title="江苏",江苏公共
-http://49.83.84.2:7000/rtp/239.49.1.22:6000
+http://49.83.84.2:7000/udp/239.49.1.22:6000
 #EXTINF:-1,tvg-id="江苏国际" tvg-name="江苏国际" tvg-logo="https://epg.112114.xyz/logo/江苏国际.png" group-title="江苏",江苏国际
-http://49.83.84.2:7000/rtp/239.49.1.23:6000
+http://49.83.84.2:7000/udp/239.49.1.23:6000
 #EXTINF:-1,tvg-id="江苏购物" tvg-name="江苏购物" tvg-logo="https://epg.112114.xyz/logo/江苏购物.png" group-title="江苏",江苏购物
-http://49.83.84.2:7000/rtp/239.49.1.24:6000
+http://49.83.84.2:7000/udp/239.49.1.24:6000
 #EXTINF:-1,tvg-id="江苏教育电视台" tvg-name="江苏教育电视台" tvg-logo="https://epg.112114.xyz/logo/江苏教育电视台.png" group-title="江苏",江苏教育
-http://49.83.84.2:7000/rtp/239.49.1.25:6000
+http://49.83.84.2:7000/udp/239.49.1.25:6000
 #EXTINF:-1,tvg-id="江苏靓妆" tvg-name="江苏靓妆" tvg-logo="https://epg.112114.xyz/logo/江苏靓妆.png" group-title="江苏",江苏靓妆
-http://49.83.84.2:7000/rtp/239.49.1.26:6000
+http://49.83.84.2:7000/udp/239.49.1.26:6000
 #EXTINF:-1,tvg-id="南京科教" tvg-name="南京科教" tvg-logo="https://epg.112114.xyz/logo/南京科教.png" group-title="其他",南京科教
-http://49.83.84.2:7000/rtp/239.49.1.27:6000
+http://49.83.84.2:7000/udp/239.49.1.27:6000
 #EXTINF:-1,tvg-id="南京生活" tvg-name="南京生活" tvg-logo="https://epg.112114.xyz/logo/南京生活.png" group-title="其他",南京生活
-http://49.83.84.2:7000/rtp/239.49.1.28:6000
+http://49.83.84.2:7000/udp/239.49.1.28:6000
