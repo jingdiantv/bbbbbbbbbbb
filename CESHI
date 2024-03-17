@@ -1,22 +1,98 @@
-#EXTINF:-1 group-title="未分类",凤凰卫视-720
-http://50.7.238.114:8278/phoenixtv_hd/playlist.m3u8?tid=MFBF2713938527139385&ct=19225&tsum=1c8ca0899277714ab83db57245220068
-#EXTINF:-1 group-title="未分类",凤凰资讯-720
-http://50.7.238.114:8278/phoenixinfo_hd/playlist.m3u8?tid=MC1C1591244615912446&ct=19225&tsum=a4fd6441d252c98ea603b13ef749a84e
-#EXTINF:-1 group-title="未分类",凤凰香港-1080
-http://50.7.238.114:8278/hkphoenix_twn/playlist.m3u8?tid=MD0D2495250724952507&ct=19249&tsum=b1c0a577a7f4aaa9af143d124ba24a40
-#EXTINF:-1 group-title="未分类",凤凰卫视-快
-http://playtv-live.ifeng.com/live/06OLEGEGM4G.m3u8
-#EXTINF:-1 group-title="未分类",凤凰资讯-快
-http://playtv-live.ifeng.com/live/06OLEEWQKN4.m3u8
-#EXTINF:-1 group-title="未分类",凤凰卫视-酒店
-https://yang-1989.eu.org/jd/fhws
-#EXTINF:-1 group-title="未分类",凤凰资讯-酒店
-https://yang-1989.eu.org/jd/fhzx
-#EXTINF:-1 group-title="未分类",凤凰香港-酒店
-https://yang-1989.eu.org/jd/fhxg
-#EXTINF:-1 group-title="未分类",凤凰卫视-翻
-http://198.16.100.90:8278/phoenixtv_hd/playlist.m3u8?tid=MF6F2163882521638825&ct=19249&tsum=2375037c2689c4190d14c8a52bc35c83
-#EXTINF:-1 group-title="未分类",凤凰资讯-翻
-http://198.16.100.90:8278/phoenixinfo_hd/playlist.m3u8?tid=MB5B7253262872532628&ct=19249&tsum=e2b2dcd00f39adb64b6c03601da1e0e0
-#EXTINF:-1 group-title="未分类",凤凰中文-翻
-http://198.16.100.90:8278/hkphoenix_twn/playlist.m3u8?tid=MD0D2495250724952507&ct=19249&tsum=b1c0a577a7f4aaa9af143d124ba24a40
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆1
+https://iptv.5i計畫通行.cloudns.org/huya/23740156
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆2
+https://yang-1989.eu.org/huya/23740156
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆3
+https://yang-1989.eu.org/huya/23735126
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆4
+https://yang-1989.eu.org/huya/23903123
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆5
+https://yang-1989.eu.org/huya/23734169
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆6
+https://yang-1989.eu.org/huya/23863804
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆7
+https://yang-1989.eu.org/huya/23865080
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆8
+https://yang-1989.eu.org/huya/23864973
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆9
+https://yang-1989.eu.org/huya/23903130
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆10
+https://yang-1989.eu.org/huya/23860039
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆11
+https://yang-1989.eu.org/huya/23903183
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆12
+https://yang-1989.eu.org/huya/23903196
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆13
+https://yang-1989.eu.org/huya/23728674
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆14
+https://yang-1989.eu.org/huya/23865036
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆15
+https://yang-1989.eu.org/huya/23829543
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆16
+https://yang-1989.eu.org/huya/23865161
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆17
+https://yang-1989.eu.org/huya/23865058
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆18
+https://yang-1989.eu.org/huya/23824164
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆19
+https://yang-1989.eu.org/huya/23863796
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆20
+https://yang-1989.eu.org/huya/23734183
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆21
+https://yang-1989.eu.org/huya/23728660
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆22
+https://yang-1989.eu.org/huya/23865142
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆23
+https://yang-1989.eu.org/huya/23734246
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆24
+https://yang-1989.eu.org/huya/23865171
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆25
+https://yang-1989.eu.org/huya/23734256
+#EXTINF:-1 group-title="•埋堆堆",埋堆堆26
+https://yang-1989.eu.org/huya/23749083
+#EXTINF:-1 group-title="•影视",「解说」大象放映室
+https://yang-1989.eu.org/huya/21277391
+#EXTINF:-1 group-title="•影视",「解说」电视剧
+https://yang-1989.eu.org/huya/25018873
+#EXTINF:-1 group-title="•影视",「解说」电影•1
+https://yang-1989.eu.org/huya/20289754
+#EXTINF:-1 group-title="•影视",「解说」电影•2
+https://yang-1989.eu.org/huya/24983280
+#EXTINF:-1 group-title="•影视",「解说」电影•3
+https://yang-1989.eu.org/huya/24396428
+#EXTINF:-1 group-title="•影视",「解说」动漫•1
+https://yang-1989.eu.org/huya/19757963
+#EXTINF:-1 group-title="•影视",「解说」恐怖电影
+https://yang-1989.eu.org/huya/23419131
+#EXTINF:-1 group-title="•影视",「解说」漫威
+https://yang-1989.eu.org/huya/17089779
+#EXTINF:-1 group-title="•影视",「解说」美剧
+https://yang-1989.eu.org/huya/20488841
+#EXTINF:-1 group-title="•影视",「解说」七龙珠
+https://yang-1989.eu.org/huya/25650806
+#EXTINF:-1 group-title="•影视",「解说」止戈电影
+https://yang-1989.eu.org/huya/19863777
+#EXTINF:-1 group-title="•影视",「其他」挨饿德•1
+https://yang-1989.eu.org/huya/20985858
+#EXTINF:-1 group-title="•影视",「其他」挨饿德•2
+https://yang-1989.eu.org/huya/17693860
+#EXTINF:-1 group-title="•影视",「其他」 互扇巴掌大赛
+https://yang-1989.eu.org/huya/20072873
+#EXTINF:-1 group-title="•影视",「其他」荒野求生
+https://yang-1989.eu.org/huya/593667
+#EXTINF:-1 group-title="•影视",「其他」野行者
+https://yang-1989.eu.org/huya/20072663
+#EXTINF:-1 group-title="•影视",「其他」跳舞
+https://yang-1989.eu.org/huya/24634408
+#EXTINF:-1 group-title="•影视",「动画」茶啊二中
+https://yang-1989.eu.org/huya/11213191
+#EXTINF:-1 group-title="•影视",「动漫」哆啦A梦
+https://yang-1989.eu.org/huya/11601963
+#EXTINF:-1 group-title="•影视",「动漫」航海王
+https://yang-1989.eu.org/huya/16913382
+#EXTINF:-1 group-title="•影视",「动漫」七龙珠改
+https://yang-1989.eu.org/huya/11601966
+#EXTINF:-1 group-title="•影视",「动漫」猫和老鼠
+https://yang-1989.eu.org/huya/11352879
+#EXTINF:-1 group-title="•影视",「动漫」中华小当家
+https://yang-1989.eu.org/huya/11342413
